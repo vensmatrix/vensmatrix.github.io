@@ -1,0 +1,28 @@
+<!-- reference from url=https://srgl.tk/finalboss/ -->
+<!-- decoded that base64 encode -->
+
+<html>
+<title>Iruna.tk -Final boss!!! </title>
+<body bgcolor="#000000">
+<style type="text/css">
+html, body {
+  overflow: hidden;
+}
+</style>
+<center><h1><font color="white">You have been facing <font color="red">[FINALBOSS!!]</font> for <span id="time"></span> seconds</font></h1></center>
+<center><img height="100%" src="/index/finalbossgif.gif" /></center>
+<embed src="/index/finalbossdecode.oga" width="180" height="90" loop="true" autostart="true" hidden="true" />
+<script language="javascript">
+    if (!Date.now) {
+        Date.now = function () {
+            return new Date().getTime();
+        }
+    }
+    var now = Date.now(),
+            fn = function () {
+                document.getElementById("time").innerHTML = String(Math.floor((Date.now() - now) / 1000));
+            };
+    setInterval(fn, 100);
+</script>
+</body>
+</html>
